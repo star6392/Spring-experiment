@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fsd
+    driver-class-name: org.postgresql.Driver
+    username: root
+    password: admin
+    hikari:
+      auto-commit: false
+      maximum-pool-size: 10
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  data:
+    rest:
+      base-path: /api
+       
